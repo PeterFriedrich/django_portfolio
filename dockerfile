@@ -6,6 +6,7 @@ ENV PYTHONUNBUFFERED 1
 WORKDIR /app
 
 RUN apt-get update && apt-get install -y \
+    sqlite3 \
     gcc \
     && rm -rf /var/lib/apt/lists/*
 
